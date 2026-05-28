@@ -5,14 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0px;
+      }
       ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding: 15px;
         display: flex;
       }
       li {
         margin-right: 60px;
+      }
+      #welcomebanner {
+        background-color: blue;
+        color: white;
+      }
+      .highlight {
+        color: blue;
+        background-color: yellow;
+        font-weight: bold;
+        padding: 8px;
+      }
+      .content {
+        padding: 20px;
       }
     </style>
   </head>
@@ -25,11 +42,24 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <!-- Welcome Banner -->
+    <div id="welcomebanner">
+      <h1 style="padding: 8px">
+        Welcome to the Local Community Event Portal User!!
+      </h1>
+      <p style="padding-bottom: 8px; padding-left: 8px">
+        Don't miss out on the latest community events and activities!
+      </p>
+      <p class="highlight">
+        <span style="color: red; text-weight: bold">Special Offer: </span>
+        Discount for early event registrations!!
+      </p>
+    </div>
     <!-- Main -->
     <hr />
     <main></main>
-    <section id="home">
-      <h1>Welcome to the Local Community Event Portal</h1>
+    <section id="home" class="content">
+      <h2>Welcome to the Local Community Event Portal</h2>
       <p>
         Stay connected with your neighborhood and discover exciting community
         activities happening around you. From cultural festivals and workshops
@@ -38,7 +68,7 @@
       </p>
     </section>
     <hr />
-    <section id="events">
+    <section id="events" class="content">
       <h2>Upcoming Events</h2>
 
       <article>
@@ -69,7 +99,7 @@
       </article>
     </section>
     <hr />
-    <section id="contact">
+    <section id="contact" class="content">
       <h2>Contact Us</h2>
       <p>Email: communityportal@example.com</p>
       <p>Phone: +91 9612210000</p>
